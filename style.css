@@ -651,7 +651,7 @@ body {
 
  aside ul{
     list-style: url('assets/img/sqpurple.gif');
-    border-left: 2px solid;
+    border-left: 2px solid #8f237a80;
     background-color: #dcdcdc4d;
 }
 
@@ -670,7 +670,7 @@ aside ul a:hover {
 }
 
 aside h2 {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #dcdcdc4d;
     padding-bottom: 10px;
 }
 
@@ -681,4 +681,25 @@ padding: 15px;
 background-color: white;
 border-radius: 7px;
 margin-bottom: 5px;
+}
+.page_item {
+    margin-right: 20px;
+
+}
+.page_item a {
+    color: rgba(233, 4, 85, 0.9);
+}
+.page_item a:hover {
+    color: whitesmoke;
+}
+
+.current_page_item a {
+    color: white;
+}
+
+.page_item.page-item-29 {
+    order: 2;
+}
+.page_item.page-item-11 {
+    order: 1;
 }

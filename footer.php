@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row ">
                 <div class="col-sm-4 offset-sm-3 copy-right" style="text-align: center">
-                    <p class="pull-right">&copy; 2018 vocung.vn</p>
+                    <p class="pull-right">&copy; <?php echo date('Y'); ?> <?php bloginfo('name') ?></p>
 
                 </div>
                 <div id="icon-footer" class="col-sm-1"><a href="http://facebook.com"><i class="fab fa-facebook-square"></i></a></div>
