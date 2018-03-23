@@ -1,0 +1,684 @@
+/*!
+Theme Name: VO CUNG
+Theme URI: http://underscores.me/
+Author: khánh duy
+Author URI: http://vocung.vn
+Description: wordpress theme use bootstrap
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: vo-cung
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+VO CUNG is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+	/* Make sure select elements fit in widgets. */
+}
+
+.widget select {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	/* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+
+
+
+/* @font-face thêm font vào  */
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('assets/fonts/VNF-ProximaNovaCond-Regular.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 31px;
+
+
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+
+    font-weight: 700;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: none;
+    text-align: start;
+    text-indent: 0px;
+
+
+}
+
+header {
+    color: whitesmoke;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 16px;
+
+}
+
+/* chuyển link thành mầu đỏ  */
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+    color: rgba(233, 4, 85, 0.9);
+
+}
+
+/* thêm border vào link khi active */
+
+/* mầu chữ của link khi ở trạng thái bình thường */
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(237, 237, 237);
+}
+
+/* khoảng cách giữa link */
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: .5rem;
+}
+
+/* nút tìm kiếm màu trắng */
+
+.btn-primary {
+    color: #fff;
+    background-color: #282a2c;
+    border-color: #f3f3f3;
+}
+
+
+#gioi-thieu p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 52px;
+    color: white;
+
+}
+
+#gioi-thieu {
+    height: 480px;
+    background: url('assets/img/gioithieu.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#trich-dan {
+    background: #d20a4d66;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#signup {
+    background: url('assets/img/signup.jpg') no-repeat;
+    height: 300px;
+    text-align: center;
+}
+
+.modal-content {
+    background: url('assets/img/bg-email.jpg') no-repeat;
+}
+
+footer {
+    position: relative;
+    height: 100px;
+
+}
+
+#icon-footer {
+    text-align: center;
+    color: rgba(233, 4, 85, 0.9);
+    font-size: 2em;
+
+}
+
+#icon-footer:hover {
+    color: white;
+}
+
+.copy-right {
+    margin-top: 15px;
+}
+
+#slideAd {
+    position: absolute;
+    bottom: -110px;
+    right: 20px;
+}
+
+#arrow-up {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+#primary {
+    margin-top: 30px;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(71, 71, 77);
+    line-height: 30.4px;
+    vertical-align: baseline;
+    font-weight: 400;
+
+
+}
+
+.post {
+    border-bottom: 1px solid rgba(233, 4, 85, 0.33);
+    padding: 15px;
+    background-color: white;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+.post a {
+    color: black;
+}
+
+.post a:hover {
+    color: pink;
+
+}
+
+
+#feature-image {
+    position: relative;
+    display: table;
+    height: 400px;
+    width: 100%;
+    background-position: center center !important;
+    background-size: cover !important;
+}
+
+.pattern-overlay::before,
+footer::before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-image: url('assets/img/pattern.png');
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+#feature-image h1 {
+    text-align: center;
+
+    text-shadow: 0 0 20px #222222;
+    font-size: 54px;
+    color: white;
+    margin: 0;
+}
+
+aside .widget .widget-header {
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid rgba(233, 4, 85, 0.33);
+}
+
+aside .widget .widget-body {
+    padding: 15px;
+    background-color: white;
+    background-size: cover !important;
+    background-position: bottom center;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+#text-12 {
+    margin-top: 5px;
+}
+
+
+.post-header {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.img-post {
+    margin: 15px 0;
+}
+
+#comments {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+
+#comments h3 {
+    text-align: center;
+}
+
+#comments h4 {
+    font-size: 1.3em;
+}
+
+#comments ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#comments ol li {
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 20px;
+    margin: 10px 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px rgba(0, 0, 0, 0.03);
+}
+
+#comments ol li ol.children {
+    padding: 0;
+    list-style: none;
+    font-size: 0.96em;
+}
+
+
+
+.comment-meta {
+    height: auto;
+}
+.comment-meta::before {
+    width: 180px;
+}
+
+
+#comment , #author , #email, #submit {
+    border-radius: 15px;
+
+}
+
+ aside ul{
+    list-style: url('assets/img/sqpurple.gif');
+    border-left: 2px solid;
+    background-color: #dcdcdc4d;
+}
+
+a {
+    text-decoration: none !important;
+
+
+
+}
+
+aside ul a:hover {
+    position: relative;
+    right: 2px;
+
+    transition: all linear 0.1s;
+}
+
+aside h2 {
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+
+
+.post-1 {
+    border-bottom: 1px solid rgba(233, 4, 85, 0.33);
+padding: 15px;
+background-color: white;
+border-radius: 7px;
+margin-bottom: 5px;
+}
