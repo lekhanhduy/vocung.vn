@@ -464,6 +464,7 @@ header {
 
 .modal-content {
     background-color: #ffffff1a !important;
+    color: antiquewhite;
 }
 
 footer {
@@ -710,4 +711,10 @@ margin-bottom: 5px;
 .bg-dark {
     background-color: #c5447f1a !important;
     border-bottom: 2px solid #611738;
+}
+
+@media only screen and (max-width:400px) {
+    #gioi-thieu p {
+        font-size: 22px;
+    }
 }
