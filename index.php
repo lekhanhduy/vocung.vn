@@ -14,6 +14,7 @@
 
 get_header();
 ?>
+   <div class="container-fluid">
     <header class="site-header bg-dark" role="banner" id="header-id">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="back-ground">
@@ -53,6 +54,7 @@ get_header();
         <h1>Blog</h1>
 
     </div>
+</div>
     <div class="container" id="primary">
         <div class="row">
 
