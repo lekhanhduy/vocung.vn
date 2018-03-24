@@ -463,7 +463,7 @@ header {
 }
 
 .modal-content {
-    background: url('assets/img/bg-email.jpg') no-repeat;
+    background-color: #ffffff1a !important;
 }
 
 footer {
@@ -695,7 +695,10 @@ margin-bottom: 5px;
 }
 
 .current_page_item a {
-    color: white;
+    color: white !important;
+}
+.current_page_parent a {
+    color: white !important;
 }
 
 .page_item.page-item-29 {
@@ -703,4 +706,8 @@ margin-bottom: 5px;
 }
 .page_item.page-item-11 {
     order: 1;
+}
+.bg-dark {
+    background-color: #c5447f1a !important;
+    border-bottom: 2px solid #611738;
 }

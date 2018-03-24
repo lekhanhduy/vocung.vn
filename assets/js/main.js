@@ -9,7 +9,7 @@ $(function() {
     var id_button = '#arrow-up';
 
     // Kéo xuống khoảng cách 220px thì xuất hiện button
-    var offset = 220;
+    var offset = 320;
 
     // THời gian di trượt là 0.5 giây
     var duration = 700;
