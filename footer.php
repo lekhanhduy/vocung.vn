@@ -22,7 +22,7 @@
                 </div>
                 <div id="icon-footer" class="col-sm-1"><a href="http://facebook.com"><i class="fab fa-facebook-square"></i></a></div>
             </div>
-            <div  id="arrow-up"style="font-size: 2em;"><a href="#header-id"><i class="fas fa-arrow-up"></i></a></div>
+            <div  id="arrow-up"style="font-size: 2em;"><a><i class="fas fa-arrow-up"></i></a></div>
         </div>
             <!-- end col -->
             <!-- container -->

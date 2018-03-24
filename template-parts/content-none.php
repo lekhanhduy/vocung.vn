@@ -9,11 +9,11 @@
 
 ?>
 <div class="container" id="primary">
-        <div class="row post">
+        <div class="row post d-flex justify-content-center">
 
-            <main id="content" class="col-lg-7 col-md-7" role="main">
+            <main id="content" class="col-lg-7 col-md-7" role="main" style="text-align: center;">
 
-		<h1 class="page-title"><?php esc_html_e( 'Không tìm kiếm thấy', 'vo-cung' ); ?></h1>
+		<h1 class="page-title" style="text-align: center;"><?php esc_html_e( 'Không tìm kiếm thấy', 'vo-cung' ); ?><i class="far fa-frown"></i></h1>
 
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) :
@@ -34,9 +34,17 @@
 		elseif ( is_search() ) :
 			?>
 
-			<p><?php esc_html_e( 'Xin lỗi không có kết quả tìm kiếm nào chùng khớp , bạn vui lòng thử lại với một từ khóa khác.', 'vo-cung' ); ?></p>
-			<?php
-			get_search_form();
+
+                <p><?php esc_html_e( 'Xin lỗi không có kết quả tìm kiếm nào chùng khớp. Bạn vui lòng thử lại với một từ khóa khác.', 'vo-cung' ); ?></p>
+			 <form method="get" class="searchform" action="<?php echo home_url( '/'); ?>" >
+
+                             <input type="text" class="field s to-se form-control mr-sm-2" name="s" placeholder="Tìm kiếm" aria-label="Search" />
+
+             </form>
+
+
+                    <?php
+
 
 		else :
 			?>

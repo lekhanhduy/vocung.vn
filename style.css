@@ -494,9 +494,10 @@ footer {
 }
 
 #arrow-up {
-    position: absolute;
-    right: 15px;
-    top: 20px;
+    position: fixed;
+    right: 5%;
+    bottom: 23px;
+
 }
 
 #primary {

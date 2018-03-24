@@ -59,18 +59,15 @@
                 ));
 
                 ?>
-                    <i class="fas fa-search" data-toggle="modal" data-target=".bd-example-modal-sm"></i>
 
-                    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-sm">
-                            <div class="modal-content">
+             <form method="get" class="searchform" action="<?php echo home_url( '/'); ?>" >
 
-                                    <?php dynamic_sidebar('sidebar-2'); ?>
+                 <input type="search" class="field s to-se form-control mr-sm-2" name="s" placeholder="Tìm kiếm" aria-label="Search" />
+
+             </form>
+                    <span id="toggle-search"><i class="fas fa-search"></i></span>
 
 
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </nav>
         </div>
