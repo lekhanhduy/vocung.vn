@@ -718,3 +718,6 @@ margin-bottom: 5px;
         font-size: 22px;
     }
 }
+.form-control {
+    background-color: #fff0;
+}
