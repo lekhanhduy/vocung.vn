@@ -73,7 +73,7 @@ get_header();
                         <p><?php echo $mieuta_contact; ?></p>
                     </div>
                 </div>
-                <div class="row post">
+                <div class="row post bg-form">
                     <?php while (have_posts()): the_post(); ?>
                     <?php the_content(); ?>
                     <?php endwhile; ?>

@@ -713,11 +713,17 @@ margin-bottom: 5px;
     border-bottom: 2px solid #611738;
 }
 
+
+#categories-2,#recent-posts-3 {
+    background-image: url(assets/img/banner.svg);
+}
+
 @media only screen and (max-width:400px) {
     #gioi-thieu p {
         font-size: 22px;
     }
 }
-.form-control {
-    background-color: #fff0;
+
+.bg-form {
+    background-image: url(assets/img/banner.svg);
 }
